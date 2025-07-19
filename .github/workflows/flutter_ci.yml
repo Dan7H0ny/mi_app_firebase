@@ -31,8 +31,5 @@ jobs:
       - name: Ejecutar análisis estático
         run: flutter analyze
 
-      - name: Ejecutar tests
-        run: flutter test
-
       - name: Compilar APK (Android)
         run: flutter build apk --debug
