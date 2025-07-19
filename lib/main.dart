@@ -87,7 +87,8 @@ class AuthExampleState extends State<AuthExample> {
 
     try {
       final response = await http.get(
-        Uri.parse('http://10.0.2.2:3000/mensaje-autenticado'), // IP para emulador Android
+        Uri.parse(
+            'http://10.0.2.2:3000/mensaje-autenticado'), // IP para emulador Android
       );
 
       if (response.statusCode == 200) {
